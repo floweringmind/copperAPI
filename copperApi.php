@@ -317,7 +317,7 @@ class copperPeople
 class copperOpportunity
 {
 
-	private $copperApi;
+    private $copperApi;
 
     public function __construct(copperApi $copperApi)
     {
