@@ -168,9 +168,9 @@ if ($target == 'opportunities')
 
 class copperApi
 {
-	private $apiKey;
-	private $application;
-	private $devEmail;
+    private $apiKey;
+    private $application;
+    private $devEmail;
 
     public function __construct($apiKey, $application, $devEmail)
     {
@@ -219,12 +219,12 @@ class copperApi
 class copperCompanies
 {
 
-	protected $copperApi;
+    protected $copperApi;
 
-	 public function __construct(copperApi $copperApi)
-	 {
-	 	$this->copperApi = $copperApi;
-	 }
+    public function __construct(copperApi $copperApi)
+    {
+ 	$this->copperApi = $copperApi;
+    }
 
     public function findCompanies($numRecords, $sortBy)
     {
@@ -251,7 +251,7 @@ class copperCompanies
 class copperPeople
 {
 
-	private $copperApi;
+    private $copperApi;
 
     public function __construct(copperApi $copperApi)
     {
